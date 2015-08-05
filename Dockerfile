@@ -45,7 +45,7 @@ ADD apache/index.php /var/www/index.php
 #   mysql -u root mysql -e "UPDATE user SET Password=PASSWORD('ENTERYOUTPASSWORDHERE') WHERE User='root'; FLUSH PRIVILEGES;" -pgeheim
 ADD sql/my.cnf /etc/mysql/my.cnf
 ADD sql/conf.d /etc/mysql/conf.d
-ADD sql/mysql /data/mysql
+ADD sql/mysql /tmp/mysql
 
 
 ### PHP CONFIG ###############################
