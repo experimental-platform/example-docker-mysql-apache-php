@@ -25,6 +25,7 @@ screen \
 ssh \
 vim
 
+VOLUME ["/data"]
 
 ### APACHE CONFIG ###############################
 RUN a2enmod php5
@@ -40,6 +41,8 @@ ADD apache/index.php /var/www/index.php
 
 ### MYSQL CONFIG ###############################
 # password of root user is "geheim"
+# to change, login via ssh after start and run:
+#   mysql -u root mysql -e "UPDATE user SET Password=PASSWORD('ENTERYOUTPASSWORDHERE') WHERE User='root'; FLUSH PRIVILEGES;" -pgeheim
 ADD sql/my.cnf /etc/mysql/my.cnf
 ADD sql/conf.d /etc/mysql/conf.d
 ADD sql/mysql /data/mysql
@@ -51,6 +54,6 @@ ADD php/php.ini /etc/php5/apache2/php.ini
 
 ADD startup.sh /startup.sh
 
-VOLUME ["/data"]
+
 EXPOSE 80
 CMD /startup.sh
