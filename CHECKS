@@ -1,0 +1,4 @@
+WAIT=300     
+TIMEOUT=120  
+ATTEMPTS=10
+/check.txt simple_check
