@@ -1,2 +1,0 @@
-# blank_docker_mysql_apache2_php_app
-blank_docker_mysql_apache2_php_app
