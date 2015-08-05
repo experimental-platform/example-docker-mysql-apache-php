@@ -1,5 +1,6 @@
 if [ -d "/tmp/mysql" ]; then
   mv /tmp/mysql /data
+  mv /tmp/www /data
   mkdir /data/tmp
 fi
 
