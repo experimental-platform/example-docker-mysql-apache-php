@@ -4,5 +4,5 @@
 
     git clone git@github.com:experimental-platform/docker-mysql-apache-php-example.git
     cd docker-mysql-apache-php-example
-    git remote add platform ssh://dokku@your-box.local:8022/rails-hello-world
+    git remote add platform ssh://dokku@your-box.local:8022/docker-mysql-apache-php-example
     git push platform master
