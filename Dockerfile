@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM experimentalplatform/ubuntu:latest
 MAINTAINER Silvano Wegener <silvano@protonet.info>
 
 ENV DEBIAN_FRONTEND noninteractive 
